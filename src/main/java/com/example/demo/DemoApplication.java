@@ -14,9 +14,13 @@ public class DemoApplication {
 
     ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-    //    Vehicle obj = (Vehicle) context.getBean("bike");
-    //    obj.drive();
-    Bike bike = (Bike) context.getBean("bike");
-    System.out.println(bike);
+    Car car = (Car) context.getBean("car");
+    System.out.println(car);
+
+    //    Bike bike = (Bike) context.getBean("bike");
+    //    System.out.println(bike);
+    //
+    //    Tyre tyre = (Tyre) context.getBean("tyre");
+    //    System.out.println(tyre);
   }
 }
