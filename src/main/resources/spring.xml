@@ -8,12 +8,16 @@
 
     <context:component-scan base-package="com.example.demo"/>
 
-    <bean class="com.example.demo.Bike" id="bike">
-        <!--        property injection-->
-        <property name="brand" value="Honda"></property>
+    <!--    <bean class="com.example.demo.Bike" id="bike">-->
+    <!--        &lt;!&ndash;        property injection, is overriding constructor injection&ndash;&gt;-->
+    <!--                <property name="brand" value="Honda"></property>-->
 
-        <!--        constructor injection-->
-        <constructor-arg value="Benz"/>
+    <!--        &lt;!&ndash;        constructor injection&ndash;&gt;-->
+    <!--        <constructor-arg value="Benz"/>-->
+    <!--    </bean>-->
+
+    <bean class="com.example.demo.Tyre" id="tyre">
+        <constructor-arg value="MRF"/>
     </bean>
 
 </beans>

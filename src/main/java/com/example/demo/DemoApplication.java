@@ -14,12 +14,12 @@ public class DemoApplication {
 
     ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-    Car car = (Car) context.getBean("car");
-    System.out.println(car);
+    //    Car car = (Car) context.getBean("car");
+    //    System.out.println(car);
 
-    //    Bike bike = (Bike) context.getBean("bike");
-    //    System.out.println(bike);
-    //
+    Bike bike = (Bike) context.getBean("bike");
+    System.out.println(bike);
+
     //    Tyre tyre = (Tyre) context.getBean("tyre");
     //    System.out.println(tyre);
   }

@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
   @Bean
   Bike bike() {
-    return new Bike("Honda");
+    return new Bike("Hero");
   }
 }
